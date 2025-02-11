@@ -14,7 +14,7 @@ const OAuthProvider: FC<OAuthProps> = ({ children }) => {
     domain={domain}
     clientId={clientId}
     authorizationParams={{
-      redirect_uri: window.location.origin,
+      redirect_uri: 'https://login-github-with-oauth.vercel.app/callback',
     }}
   >
     {children}
